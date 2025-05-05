@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allahu - Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="conteinerRegister">
+        <h2>Informe seus dados</h2>
+        <form id="registerForm">
+            <ol>
+            <li><p>Nome Completo:*</p><input type="text" id="name" placeholder="Nome completo" required></li>
+
+            <li><p>CPF:*</p><input type="text" id="CPF" placeholder="CPF" required></li>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(__) 91234-5678" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" required>
+
+            <li><p>Sexo:*</p><input type="text" id="Sexo" placeholder="Sexo" required></li>
+            
+            <label for="birthdate">Data de Nascimento:*</label>
+            <input type="date" id="birthdate" name="Data de Nascimento" required>
+
+            <li><input type="email" id="email" placeholder="E-mail" required></li>
+
+            <li><p>Observação:*</p><input type="text" id="Observação" placeholder="Observação" required></li>
+
+            <li><p>Senha:*</p><input type="password" id="password" placeholder="Senha" required></li>
+            <li><p>Confirmar Senha:*</p><input type="password" id="password" placeholder="Senha" required></li>
+
+            <button type="submit">Registrar</button>
+            </ol>
+        </form>
+        <p>Já tem uma conta? <a href="index.html">Faça login</a></p>
+    </div>
+
+    <div class="conteinerEndereco">
+        <h2>Endereço</h2>
+        <form id="registerEnderecoForm">
+            <ol>
+            <li><p>Endereço:*</p><input type="text" id="endereco" placeholder="Digite seu endereço completo:" required></li>
+
+            <li><p>Complemento:*</p><input type="text" id="complemento" placeholder="Informe o complemento:" required></li>
+
+            <li><p>CEP:*</p><input type="text" id="CEP" placeholder="CEP" required></li>
+
+            <li><p>Numero:*</p><input type="text" id="Numero" placeholder="Nº" required></li>
+
+            <li><p>Referência:*</p><input type="text" id="Referencia" placeholder="Informe um ponto de referência:" required></li>
+
+            <button type="submit">Registrar</button>
+            </ol>
+        </form>
+    </div>
+</body>
+</html>

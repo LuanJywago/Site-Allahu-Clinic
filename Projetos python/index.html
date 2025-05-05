@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allahu - Agendamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Agendamento de Consulta</h2>
+        <form id="appointmentForm">
+
+            <select id="clinicLocation">
+                <option value="clinica1">Clínica 1</option>
+                <option value="clinica2">Clínica 2</option>
+            </select>
+
+            <input type="datetime-local" id="appointmentTime" required>
+            
+            <select id="professional">
+                <option value="medico1">Dr. Silva</option>
+                <option value="medico2">Dra. Souza</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
