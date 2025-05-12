@@ -5,29 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allahu - Login</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Login</h1>
         <form id="loginForm">
 
-            <ol></ol>
+            <div class="form-group">
+                <label for="email">Login:*</label>
+                <input type="email" id="email" placeholder="Informe seu usuário:" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="password">Senha:*</label>
+                <input type="password" id="password" placeholder="Senha:" required>
+            </div>
+        
+            <div class="checkbox-row">
+                <label class="remember">
+                    <input type="checkbox" id="lembrar"> Lembrar senha?
+                </label>
+                <a href="#" class="forgot-link">Esqueceu sua senha?</a>
+            </div>
+            
+            <div class="buttons-row">
+                <a href="register.html" class="btn-secondary">Cadastrar-se</a>
+                <button type="submit" class="btn-primary">Entrar</button>
+            </div>
 
-            <li><p>Login:*</p><input type="email" id="email" placeholder="Informe seu usuário:" required></li>
-
-            <li><p>Senha:*</p><input type="password" id="password" placeholder="Senha:" required></li>
-
-            <input type="checkbox" id="lembrar">
-            <label for="remember">Lembrar senha?</label>
-
-            <a href="register.html">
-                <button type="button"><p>Cadastrar-se</p></button>
-              </a>
-            <button type="submit">Entrar</button>
-            </ol>
-
+        
         </form>
+        
     </div>
 </body>
 </html>
+
