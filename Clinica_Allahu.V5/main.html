@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allahu - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+        <div class="logo-container">
+            <img src="images/Logo1.png" alt="Logo"> <!-- a logo está sem o L para não carregar. -->
+        </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Agendamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Login</h1>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label class="Red" for="email">Usuário:<strong>*</strong></label>
+                <input type="email" id="email" placeholder="Informe seu usuário:" required>
+            </div>
+
+            <div class="form-group">
+                <label class="Red" for="password">Senha:<strong>*</strong></label>
+                <input type="password" id="password" placeholder="Senha:" required>
+            </div>
+
+            <div class="checkbox-row">
+                <label class="remember">
+                <input type="checkbox" id="lembrar">Lembrar senha?
+                </label>
+                <a href="#" class="forgot-link">Esqueceu sua senha?</a>
+            </div>
+
+            <div class="buttons-row">
+                <a href="register.html" class="btn-secondary">Cadastrar-se</a>
+                <button type="submit" class="btn-primary">Entrar</button>
+            </div>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allahu - Agendamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>AGENDAMENTO DE CONSULTA</h1>
+        <form id="appointmentForm">
+
+
+            <label class="Red" for="localclinica">Local da Clínica:<strong>*</strong></label>
+            <select id="LocalClinica">
+                <option value="clinica1">Clínica 1</option>
+                <option value="clinica2">Clínica 2</option>
+            </select><br>
+
+            <label class="Red" for="Profissional">Profissional:<strong>*</strong></label>
+            <select id="Profissional">
+                <option value="medico1">Dr. Silva</option>
+                <option value="medico2">Dra. Souza</option>
+            </select><br>
+
+            <label class="Red" for="Especialidade">Especialidade:<strong>*</strong></label>
+            <select id="Especialidade">
+                <option value="cardiologia">Cardiologia</option>
+                <option value="dermatologia">Dermatologia</option>
+            </select><br>
+
+            <label class="Red" for="TipoConsulta">Tipo de Consulta:<strong>*</strong></label>
+            <select id="TipoConsulta">
+                <option value="consulta">Consulta</option>
+                <option value="exame">Exame</option>
+            </select><br>
+
+            <label class="Red" for="">Data da Consulta:<strong>*</strong></label>
+            <input type="date" id="Data da consulta" required><br>
+
+            <label class="Red" for="healthPlan">Plano de Saúde:<strong>*</strong></label>
+            <select id="healthPlan">
+                <option value="plano1">Plano de Saúde 1</option>
+                <option value="plano2">Plano de Saúde 2</option>
+            </select><br>
+
+            <label class="Red" for="appointmentTime">Horário da Consulta:<strong>*</strong></label>
+            <select id="appointmentTime">
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+            </select><br>
+
+            <button type="submit">Agendar</button>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
