@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allahu - Agendamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="Login.html">
+                <img src="images/Logo1.png" alt="Logo">
+                </a>
+                <h1>Clínica Allahu</h1>
+            </div>
+            <a href="Login.html">Home</a>
+            <a href="#">Sobre</a>
+            <a href="Cadastro.html">Cadastro</a>
+            <a href="Agendamento.html">Agendamento</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>AGENDAMENTO DE CONSULTA</h1>
+        <form id="appointmentForm">
+
+
+            <label class="Red" for="localclinica">Local da Clínica:<strong>*</strong></label>
+            <select id="LocalClinica">
+                <option value="clinica1">Clinica 402 Sul</option>
+                <option value="clinica2">Clínica Águas Claras</option>
+                <option value="clinica3">Clínica Samambaia</option>
+                <option value="clinica4">Clínica Recanto das Emas</option>
+            </select><br>
+
+            <label class="Red" for="Profissional">Profissional:<strong>*</strong></label>
+            <select id="Profissional">
+                <option value="medico1">Dr. Eduardo Ferreira</option>
+                <option value="medico2">Dr. Arthur Araújo</option>
+                <option value="medico3">Dr. Daniel Lima</option>
+                <option value="medico4">Dr. Luan Jywago</option>
+                <option value="medico5">Dr. Guilherme leony</option>
+                <option value="medico6">Dr. Lucas Pilloti</option>
+                <option value="medico7">Dr. Yaser Adriano</option>
+            </select><br>
+
+            <label class="Red" for="Especialidade">Especialidade:<strong>*</strong></label>
+            <select id="Especialidade">
+                <option value="cardiologia">Cardiologia</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="fonoaudiologia">Fonoaudiologia</option>
+                <option value="gastrologia">Gastrologia</option>
+                <option value="neurologia">Neurologia</option>
+            </select><br>
+
+            <label class="Red" for="TipoConsulta">Tipo de Consulta:<strong>*</strong></label>
+            <select id="TipoConsulta">
+                <option value="consulta">Consulta</option>
+                <option value="exame">Exame</option>
+            </select><br>
+
+            <label class="Red" for="">Data da Consulta:<strong>*</strong></label>
+            <input type="date" id="DataConsulta" required><br>
+
+            <label class="Red" for="healthPlan">Plano de Saúde:<strong>*</strong></label>
+            <select id="healthPlan">
+                <option value="plano1">Porto Seguro</option>
+                <option value="plano2">Bradesco Saúde</option>
+            </select><br>
+            <button type="submit" class="BotaoAgendar">Agendar</button>
+            <button type="submit" class="BotaoVoltar">Voltar</button>
+        </form>
+    </div>
+    <div class="Horarios">
+        <label class="Red" for="appointmentTime">Horário da Consulta:<strong>*</strong></label>
+
+        <div class="SeletorHorario">
+        <input type="radio" id="time_0800" name="appointmentTime" value="08:00">
+            <label for="time_0800">08:00</label>
+            <input type="radio" id="time_0900" name="appointmentTime" value="09:00">
+            <label for="time_0900">09:00</label>
+            <input type="radio" id="time_1000" name="appointmentTime" value="10:00">
+            <label for="time_1000">10:00</label>
+            <input type="radio" id="time_1100" name="appointmentTime" value="11:00">
+            <label for="time_1100">11:00</label>
+            <input type="radio" id="time_1200" name="appointmentTime" value="12:00">
+            <label for="time_1200">12:00</label>
+            <input type="radio" id="time_1400" name="appointmentTime" value="14:00">
+            <label for="time_1400">14:00</label>
+            <input type="radio" id="time_1500" name="appointmentTime" value="15:00">
+            <label for="time_1500">15:00</label>
+            <input type="radio" id="time_1600" name="appointmentTime" value="16:00">
+            <label for="time_1600">16:00</label>
+            <input type="radio" id="time_1700" name="appointmentTime" value="17:00">
+            <label for="time_1700">17:00</label>
+            <input type="radio" id="time_1800" name="appointmentTime" value="18:00">
+            <label for="time_1800">18:00</label>
+        </div>
+    </div>
+        <footer>
+        <p>&copy; 2025, Clínica Allahu. Todos os direitos reservados aos lindos que criaram o mesmo.</p>
+    </footer>
+</body>
+</html>

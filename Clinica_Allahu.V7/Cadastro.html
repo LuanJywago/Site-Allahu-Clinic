@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allahu - Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="Login.html">
+                <img src="images/Logo1.png" alt="Logo">
+                </a>
+                <h1>Clínica Allahu</h1>
+            </div>
+            <a href="Login.html">Home</a>
+            <a href="#">Sobre</a>
+            <a href="Cadastro.html">Cadastro</a>
+            <a href="Agendamento.html">Agendamento</a>
+        </nav>
+    </header>
+    <div class="conteinerRegister">
+        <fieldset class="FieldRegister">
+            <h3 class="Inform">CADASTRO</h3>
+            <form id="registerForm">
+                <div class="register-group">
+
+                    <div class=Name>
+                        <label class="Red" for="Nome Completo:">Nome Completo:<strong>*</strong></label><br>
+                        <input type="text" id="nomecompleto" placeholder="Nome Completo" required><BR></BR>
+                    </div>
+
+                    <div class=CpfTelefoneSexo>
+                        <label class="Red" for="CPF">CPF:<strong>*</strong></label><br>
+                        <input type="number" id="CPF" placeholder="CPF" required><BR></BR>
+
+
+                        <label class="Red" for="telefone">Telefone:<strong>*</strong></label><br>
+                        <input type="number" id="telefone" name="telefone" placeholder="(__) 91234-5678"
+                            pattern="\(\d{2}\)\s\d{4,5}-\d{4}" required><BR>
+
+
+                        <label class="Red" for="Sexo">Sexo<strong>*</strong></label><br>
+                        <input type="text" id="Sexo" placeholder="Sexo" required><br>
+                    </div>
+
+
+                    <div class="DataEmail">
+                        <label class="Red" for="birthdate">Data de Nascimento:<strong>*</strong></label><br>
+                        <input type="date" id="birthdate" name="Data de Nascimento" required><br>
+
+
+                        <label class="Red" for="email">Email<strong>*</strong></label><br>
+                        <input type="email" id="email" placeholder="E-mail" required><br>
+                    </div>
+
+                    <div class="Obs"><label for="Observação">Observação:</label><br>
+                        <input type="text" id="Observação" placeholder="Observação"><br>
+                    </div>
+
+                    <label class="Red" for="password">Senha:<strong>*</strong></label><br>
+                    <input type="password" id="password2" placeholder="Senha:" required><br>
+
+                    <label class="Red" for="password">Confirmar Senha:<strong>*</strong></label><br>
+                    <input type="password" id="password3" placeholder="Senha" required><br>
+                </div>
+            </form>
+        </fieldset>
+
+
+        <a href="Login.html" class="RegisterButton">VOLTAR</a>
+        <button class="RegisterButtom" type="submit">SALVAR</button>
+    </div>
+
+    <div class="conteinerEndereco">
+        <fieldset class="FieldAddress">
+            <h2 class="Adress">Endereço</h2>
+            <form id="registerEnderecoForm">
+
+
+                <label class="Red" for="endereco">Endereço:<strong>*</strong></label><br>
+                <input type="text" id="endereco" placeholder="Digite seu endereço completo:" required>
+
+
+
+                <label class="Red" for="complemento">Complemento: <strong>*</strong></label><br>
+                <input type="text" id="complemento" placeholder="Informe o complemento:" required>
+
+
+
+                <label class="Red" for="cep">CEP: <strong>*</strong></label><br>
+                <input type="number" id="CEP" placeholder="CEP" required>
+
+
+
+                <label class="Red" for="numero">Número: <strong>*</strong></label><br>
+                <input type="number" id="Numero" placeholder="Nº" required>
+
+
+
+                <label for="referencia">Referência:</label><br>
+                <input type="text" id="Referencia" placeholder="Informe um ponto de referência:">
+        </fieldset>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025, Clínica Allahu. Todos os direitos reservados aos lindos que criaram o mesmo.</p>
+    </footer>
+</body>
+</html>
